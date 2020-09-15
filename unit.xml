@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.387" tests="5" failures="5">
+  <testsuite name="Root Suite" timestamp="2020-09-12T05:44:00" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="list view test" timestamp="2020-09-12T05:44:00" tests="5" file="/projects/challenge/test/test.js" failures="5" time="0.387">
+    <testcase name="list view test Clicking on Insert button should show alert message &quot;Please provide the valid input&quot; for the invalid or empty input" time="0.14" classname="Clicking on Insert button should show alert message &quot;Please provide the valid input&quot; for the invalid or empty input">
+      <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[id=&quot;input&quot;]&quot;}
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 5.0.0-1032-gke x86_64)" type="NoSuchElementError"><![CDATA[NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="input"]"}
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 5.0.0-1032-gke x86_64)
+    at Object.checkLegacyResponse (node_modules/selenium-webdriver/lib/error.js:546:15)
+    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:509:13)
+    at doSend.then.response (node_modules/selenium-webdriver/lib/http.js:441:30)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+From: Task: WebDriver.findElement(By(css selector, *[id="input"]))
+    at thenableWebDriverProxy.schedule (node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+    at thenableWebDriverProxy.findElement (node_modules/selenium-webdriver/lib/webdriver.js:1014:17)
+    at Context.<anonymous> (test/test.js:55:34)
+    at <anonymous>]]></failure>
+    </testcase>
+    <testcase name="list view test Clicking on Insert button should add the valid input to the list" time="0.082" classname="Clicking on Insert button should add the valid input to the list">
+      <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[id=&quot;input&quot;]&quot;}
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 5.0.0-1032-gke x86_64)" type="NoSuchElementError"><![CDATA[NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="input"]"}
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 5.0.0-1032-gke x86_64)
+    at Object.checkLegacyResponse (node_modules/selenium-webdriver/lib/error.js:546:15)
+    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:509:13)
+    at doSend.then.response (node_modules/selenium-webdriver/lib/http.js:441:30)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+From: Task: WebDriver.findElement(By(css selector, *[id="input"]))
+    at thenableWebDriverProxy.schedule (node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+    at thenableWebDriverProxy.findElement (node_modules/selenium-webdriver/lib/webdriver.js:1014:17)
+    at Context.<anonymous> (test/test.js:89:34)
+    at <anonymous>]]></failure>
+    </testcase>
+    <testcase name="list view test After inserting the value successfully should reset the input" time="0.053" classname="After inserting the value successfully should reset the input">
+      <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[id=&quot;input&quot;]&quot;}
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 5.0.0-1032-gke x86_64)" type="NoSuchElementError"><![CDATA[NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="input"]"}
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 5.0.0-1032-gke x86_64)
+    at Object.checkLegacyResponse (node_modules/selenium-webdriver/lib/error.js:546:15)
+    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:509:13)
+    at doSend.then.response (node_modules/selenium-webdriver/lib/http.js:441:30)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+From: Task: WebDriver.findElement(By(css selector, *[id="input"]))
+    at thenableWebDriverProxy.schedule (node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+    at thenableWebDriverProxy.findElement (node_modules/selenium-webdriver/lib/webdriver.js:1014:17)
+    at Context.<anonymous> (test/test.js:107:34)
+    at <anonymous>]]></failure>
+    </testcase>
+    <testcase name="list view test Font color for every third elements (3, 6 and 9 etc) in the list should be red color" time="0.056" classname="Font color for every third elements (3, 6 and 9 etc) in the list should be red color">
+      <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[id=&quot;input&quot;]&quot;}
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 5.0.0-1032-gke x86_64)" type="NoSuchElementError"><![CDATA[NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="input"]"}
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 5.0.0-1032-gke x86_64)
+    at Object.checkLegacyResponse (node_modules/selenium-webdriver/lib/error.js:546:15)
+    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:509:13)
+    at doSend.then.response (node_modules/selenium-webdriver/lib/http.js:441:30)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+From: Task: WebDriver.findElement(By(css selector, *[id="input"]))
+    at thenableWebDriverProxy.schedule (node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+    at thenableWebDriverProxy.findElement (node_modules/selenium-webdriver/lib/webdriver.js:1014:17)
+    at Context.<anonymous> (test/test.js:129:34)
+    at <anonymous>]]></failure>
+    </testcase>
+    <testcase name="list view test Font color for other than every third elements (3, 6 and 9 etc) in the list should be black color" time="0.056" classname="Font color for other than every third elements (3, 6 and 9 etc) in the list should be black color">
+      <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[id=&quot;input&quot;]&quot;}
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 5.0.0-1032-gke x86_64)" type="NoSuchElementError"><![CDATA[NoSuchElementError: no such element: Unable to locate element: {"method":"css selector","selector":"*[id="input"]"}
+  (Session info: headless chrome=78.0.3904.108)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Linux 5.0.0-1032-gke x86_64)
+    at Object.checkLegacyResponse (node_modules/selenium-webdriver/lib/error.js:546:15)
+    at parseHttpResponse (node_modules/selenium-webdriver/lib/http.js:509:13)
+    at doSend.then.response (node_modules/selenium-webdriver/lib/http.js:441:30)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+From: Task: WebDriver.findElement(By(css selector, *[id="input"]))
+    at thenableWebDriverProxy.schedule (node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+    at thenableWebDriverProxy.findElement (node_modules/selenium-webdriver/lib/webdriver.js:1014:17)
+    at Context.<anonymous> (test/test.js:161:34)
+    at <anonymous>]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
